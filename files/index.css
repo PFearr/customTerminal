@@ -1,0 +1,11 @@
+/*
+ * those CSS variables are defaults,
+ * there are here for documentation porpuse
+ */
+ :root {
+    --color: #aaa;
+    --background: #000;
+    --size: 1;
+    /* --glow: 1 */
+    --animation: terminal-blink;
+}
