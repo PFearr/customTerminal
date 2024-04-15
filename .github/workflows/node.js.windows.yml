@@ -29,4 +29,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: build-output
-        path: out
+        path: ./out/customterminal-win32-x64
