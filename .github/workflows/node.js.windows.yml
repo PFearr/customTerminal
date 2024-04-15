@@ -13,12 +13,12 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./
-
+        working-directory: "./"
     strategy:
       matrix:
         # node-version: [14.x, 16.x, 18.x]
         node-version: [18.x]
+        working-directory: [ "./" ]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -34,4 +34,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: build-output
-        path: ./out/customterminal-win32-x64
+        path: ${{ matrix.working-directory }}out/customterminal-win32-x64
