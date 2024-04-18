@@ -29,9 +29,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: npm run make 
-    - run: cd
-    - run: ls
+    - run: npm run make
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:

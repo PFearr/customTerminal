@@ -1,9 +1,14 @@
 {
   "name": "customterminal",
   "version": "1.0.0",
-  "description": "",
+  "description": "Custom Terminal",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PFearr/customTerminal.git"
+  },
   "scripts": {
+    "prestart": "electron .",
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
@@ -25,6 +30,11 @@
     "electron": "29.3.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "@electron/notarize": "^2.3.0",
+    "@electron/osx-sign": "^1.1.0",
+    "@electron/packager": "^18.3.2",
+    "chokidar": "^3.6.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "update-electron-app": "^3.0.0"
   }
 }

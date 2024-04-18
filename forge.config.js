@@ -11,8 +11,8 @@ module.exports = {
       name: '@electron-forge/publisher-github',
       config: {
         repository: {
-          owner: 'owner',
-          name: 'repo',
+          owner: 'customTerminal',
+          name: 'PFearr',
         },
       },
       prerelease: false,
